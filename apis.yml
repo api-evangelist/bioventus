@@ -1,23 +1,72 @@
 aid: bioventus
+
 name: Bioventus
-description: 'Bioventus is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: http://www.bioventus.com/wp-content/uploads/2020/07/BIOV_FacebookShare_img_2x-min.jpg
+
+description: 'Bioventus is a global leader of innovations for active healing and surgical orthobiologics, offering a comprehensive portfolio of clinically efficacious and cost‑effective solutions for patients, physicians, and payers. The company focuses on pain treatments, platelet‑rich plasma, restorative therapies, and surgical solutions, aiming to improve active lifestyles worldwide.'
+
 url: https://raw.githubusercontent.com/api-evangelist/bioventus/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-28 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-28'
+
 modified: '2026-09-28'
+
 tags:
 - Company
-apis: []
+- Orthobiologics
+- Medical Devices
+- Healthcare
+- Innovation
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/bioventus-hosts.yml
+- type: Vendors
+  url: vendors/bioventus-vendors.yml
+- type: TermsOfService
+  url: https://www.bioventus.com/terms-of-use/
+- type: PrivacyPolicy
+  url: https://www.bioventus.com/privacy-policy/
+- type: Newsroom
+  url: https://www.bioventus.com/news/
+- type: Login
+  url: https://test-portal.bioventus.com/en/accounts/login/
+- type: Leadership
+  url: https://www.bioventus.com/about-us/leadership/
+- type: DomainSecurity
+  url: security/bioventus-domain-security.yml
 - type: Website
-  url: https://forgeglobal.com/bioventus_stock/
+  url: https://www.bioventus.com/
+
+apis: []
+
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: No public API documentation or machine‑readable contract was found for Bioventus.
+  evidence:
+    - url: https://api.bioventus.com
+      status: no-response
+  checked: '2026-09-28'
+x-enrichment:
+  date: '2026-09-28'
+  status: enriched
+  artifacts_added: 4
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
